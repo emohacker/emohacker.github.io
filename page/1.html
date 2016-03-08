@@ -4,37 +4,110 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="nico 0.5.1">
-    <meta name="theme" content="one 0.2">
+    <meta name="theme" content="emohacker 0.1">
     <title> / 1</title>
-    <link rel="stylesheet" href="../static/one.css" />
+    <link rel="stylesheet" href="../static/css/emohacker.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../static/img/iphone-retina.png" /> 
+    <link rel="apple-touch-icon" sizes="144x144" href="../static/img/ipad-retina.png" />
   </head>
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="brand">
-          <a class="home" href="../"></a>
-        </div>
+  <body ontouchstart="">
+    <div id="main_menu">
+      <div class="warp20 clearfix">
+        <header>
+          <h1 class="site-title"><a href="../" title="emohacker's blog" rel="home">emohacker's blog</a></h1>
+        </header>
+        <a title="展开目录" href="javascript:;" class="menu-button res-show">
+          <!-- <img src="wp-content/themes/emohacker/images/plus.png"> -->
+        </a>
+        <nav class="rightInitial clearfix">
+          <ul class="catelist">
+          </ul>
+        </nav>
       </div>
     </div>
-    <div class="document yue">
+    <div id="main_content">
+      <div class="warp">
 <h1 class="entry-title"> / 1</h1>
 <div class="entry-list">
-
-  <div class="item" itemscope itemtype="http://schema.org/Article">
-    <h2 class="item-title">
-      <time datetime="2014-11-23T00:00:00.000Z" itemprop="dateModified">2014-11-23</time>
-      <a itemprop="name" href="../">Hello world</a>
-    </h2>
-    
-  </div>
+  <article class="list" itemscope itemtype="http://schema.org/Article"> 
+    <header class="entry-header">
+      <h1 class="entry-title">
+        <a href="../" title="Hello world" rel="bookmark">Hello world</a>
+      </h1>
+    </header>
+    <div class="entry-summary">
+      <p></p>
+    </div>
+    <footer class="entry-meta">
+      <a href="../"rel="bookmark"><time datetime="2014-11-23T00:00:00.000Z" class="entry-date">2014-11-23</time></a> | <font>类别</font>：<a href="http://emohacking.sinaapp.com/category/web%e6%8a%80%e6%9c%af/" title="查看 web技术 中的全部文章" rel="category tag">web技术</a>
+    </footer>
+  </article>
+  <article class="list" itemscope itemtype="http://schema.org/Article"> 
+    <header class="entry-header">
+      <h1 class="entry-title">
+        <a href="../emo-logo.html" title="我叫emohacker – logo诞生" rel="bookmark">我叫emohacker – logo诞生</a>
+      </h1>
+    </header>
+    <div class="entry-summary">
+      <p></p>
+    </div>
+    <footer class="entry-meta">
+      <a href="../emo-logo.html"rel="bookmark"><time datetime="2013-10-01T16:00:00.000Z" class="entry-date">2013-10-02</time></a> | <font>类别</font>：<a href="http://emohacking.sinaapp.com/category/web%e6%8a%80%e6%9c%af/" title="查看 web技术 中的全部文章" rel="category tag">web技术</a>
+    </footer>
+  </article>
 
   <div class="pagination">
   </div>
 </div>
 </div>
-    <div class="footer">
-      <p class="copyright">powered by <a href="http://lab.lepture.com/nico/">nico</a> 0.5.1</p>
     </div>
+    <div id="bottom_function">
+      <div class="functions relative clearfix">
+        <div class="button-frame has-subf ico-text" mainFunction="text" ><a href="javascript:;" class="fbutton " title="字体调整">字体调整</a></div>
+        <div class="button-frame ico-good"><a id="fgood" href="javascript:;" class="fbutton <?php if(!is_single()){ echo 'disabled';} ?>" title="赞">赞</a></div>
+        <div class="button-frame ico-comments">
+          <a id="fcomments" href="javascript:;" class="fbutton " title="评论">评论<span id="comments_count"></span></a>
+        </div>
+        <div class="button-frame has-subf ico-forward" mainFunction="forward"><a href="javascript:;" class="fbutton " title="转发">转发</a></div>
+      </div>  
+    </div>
+    <div class="function-frame" id="function_text">
+      <a href="javascript:;" class="f-text-size ss" subFunction="text_s" title="字体调整-小">小</a>
+      <a href="javascript:;" class="active f-text-size sm" subFunction="text_m" title="字体调整-中">中</a>
+      <a href="javascript:;" class="f-text-size sb" subFunction="text_b" title="字体调整-大">大</a>
+      <a href="javascript:;" subFunction="text_sun" class="active f-text-bg fico ico-sun" title="阅读背景-白天"><i></i></a>
+      <a href="javascript:;" subFunction="text_moon" class=" f-text-bg fico ico-moon"title="阅读背景-黑夜"><i></i></a>
+    </div>
+    <div class="function-frame" id="function_good"> 
+      <div class="loading" style="padding:50px 0 0;">功能开发中......</div>
+    </div>
+    <div class="function-frame" id="function_forward"> 
+      <div class="title">分享到以下社交圈</div>
+      <div id="bdshare_loading" class="loading" >loading......</div>
+      <div id="bdshare" class="bdshare_t none get-codes-bdshare">
+        <a class="bds_tsina"><i></i></a>
+        <a class="bds_qzone"><i></i></a>
+        <a class="bds_tqq"><i></i></a>
+      </div>
+    </div>
+    
+    <footer id="colophon" role="contentinfo">
+      
+      <div class="contactinfo clearfix">
+        <a target="_blank" class="github" href="https://github.com/emohacker" title="emohacker's github">github</a>
+        <a target="_blank" class="twitter" href="https://twitter.com/emohacker" title="emohacker's twitter">twitter</a>
+        <a target="_blank" class="weibo" href="http://weibo.com/u/1908738460" title="emohacker的新浪微博">新浪微博</a>
+        <a target="_blank" class="weixin cboxElement"  rel="lightbox[0]" href="http://emohacking-wordpress.stor.sinaapp.com/uploads/2013/05/weixin.jpg" title="emohacker的微信">微信</a>
+      
+      </div>
+      <div class="copyright">
+        <a class="nico" href="http://lab.lepture.com/nico/" title="Nico" target="_blank">Powered By Nico</a>
+      </div>
+    </footer>
+    <a id="backtop" href="javascript:;" title="回到顶部"><span id="backtop_binking">回到顶部</span></a>
+
     <script src="../static/one.js"></script>
   </body>
 </html>
